@@ -1,0 +1,229 @@
+{
+    "urls": [
+        {
+            "term": "Anakin Skywalker",
+            "url": "https://starwars.fandom.com/wiki/Anakin_Skywalker",
+            "replacement": "Kael Torin"
+        },
+        {
+            "term": "Darth Vader",
+            "url": "https://starwars.fandom.com/wiki/Darth_Vader",
+            "replacement": "Xarn Velgor"
+        },
+        {
+            "term": "Obi-Wan Kenobi",
+            "url": "https://starwars.fandom.com/wiki/Obi-Wan_Kenobi",
+            "replacement": "Mentor Aldric"
+        },
+        {
+            "term": "Luke Skywalker",
+            "url": "https://starwars.fandom.com/wiki/Luke_Skywalker",
+            "replacement": "Lucian Vex"
+        },
+        {
+            "term": "Princess Leia",
+            "url": "https://starwars.fandom.com/wiki/Leia_Organa",
+            "replacement": "Vera Solen"
+        },
+        {
+            "term": "Han Solo",
+            "url": "https://starwars.fandom.com/wiki/Han_Solo",
+            "replacement": "Dax Rennar"
+        },
+        {
+            "term": "Chewbacca",
+            "url": "https://starwars.fandom.com/wiki/Chewbacca",
+            "replacement": "Gorr Wulf"
+        },
+        {
+            "term": "Yoda",
+            "url": "https://starwars.fandom.com/wiki/Yoda",
+            "replacement": "Zen Morik"
+        },
+        {
+            "term": "Emperor Palpatine",
+            "url": "https://starwars.fandom.com/wiki/Palpatine",
+            "replacement": "Imperius Vex"
+        },
+        {
+            "term": "Darth Maul",
+            "url": "https://starwars.fandom.com/wiki/Darth_Maul",
+            "replacement": "Zarn Koth"
+        },
+        {
+            "term": "Darth Sidious",
+            "url": "https://starwars.fandom.com/wiki/Darth_Sidious",
+            "replacement": "Shadow Imperius"
+        },
+        {
+            "term": "Kylo Ren",
+            "url": "https://starwars.fandom.com/wiki/Kylo_Ren",
+            "replacement": "Vex Corvan"
+        },
+        {
+            "term": "Rey",
+            "url": "https://starwars.fandom.com/wiki/Rey",
+            "replacement": "Lyra Sol"
+        },
+        {
+            "term": "Finn",
+            "url": "https://starwars.fandom.com/wiki/Finn_(disambiguation)",
+            "replacement": "Jax Novar"
+        },
+        {
+            "term": "Poe Dameron",
+            "url": "https://starwars.fandom.com/wiki/Poe_Dameron",
+            "replacement": "Kael Vance"
+        },
+        {
+            "term": "The Force",
+            "url": "https://starwars.fandom.com/wiki/The_Force",
+            "replacement": "Synth Flux"
+        },
+        {
+            "term": "Jedi",
+            "url": "https://starwars.fandom.com/wiki/Jedi",
+            "replacement": "Astra Kin"
+        },
+        {
+            "term": "Sith",
+            "url": "https://starwars.fandom.com/wiki/Sith",
+            "replacement": "Vorn Rek"
+        },
+        {
+            "term": "R2-D2",
+            "url": "https://starwars.fandom.com/wiki/R2-D2",
+            "replacement": "Mech-7"
+        },
+        {
+            "term": "C-3PO",
+            "url": "https://starwars.fandom.com/wiki/C-3PO",
+            "replacement": "Lingua-4"
+        },
+        {
+            "term": "BB-8",
+            "url": "https://starwars.fandom.com/wiki/BB-8",
+            "replacement": "Spheron-X"
+        },
+        {
+            "term": "Lightsaber",
+            "url": "https://starwars.fandom.com/wiki/Lightsaber",
+            "replacement": "Plasma Blade"
+        },
+        {
+            "term": "Death Star",
+            "url": "https://starwars.fandom.com/wiki/Death_Star",
+            "replacement": "Void Core"
+        },
+        {
+            "term": "Starkiller Base",
+            "url": "https://starwars.fandom.com/wiki/Starkiller_Base",
+            "replacement": "Nexus Prime"
+        },
+        {
+            "term": "TIE Fighter",
+            "url": "https://starwars.fandom.com/wiki/TIE_fighter",
+            "replacement": "Raptor Drone"
+        },
+        {
+            "term": "Millennium Falcon",
+            "url": "https://starwars.fandom.com/wiki/Millennium_Falcon",
+            "replacement": "Star Raptor"
+        },
+        {
+            "term": "X-wing",
+            "url": "https://starwars.fandom.com/wiki/X-wing_starfighter",
+            "replacement": "Viper MK-III"
+        },
+        {
+            "term": "Star Destroyer",
+            "url": "https://starwars.fandom.com/wiki/Star_Destroyer",
+            "replacement": "Oblivion Class"
+        },
+        {
+            "term": "Executor",
+            "url": "https://starwars.fandom.com/wiki/Executor",
+            "replacement": "Titan Class"
+        },
+        {
+            "term": "Tatooine",
+            "url": "https://starwars.fandom.com/wiki/Tatooine",
+            "replacement": "Dune Wastes"
+        },
+        {
+            "term": "Hoth",
+            "url": "https://starwars.fandom.com/wiki/Hoth",
+            "replacement": "Frost Prime"
+        },
+        {
+            "term": "Endor",
+            "url": "https://starwars.fandom.com/wiki/Endor",
+            "replacement": "Verdant Grove"
+        },
+        {
+            "term": "Dagobah",
+            "url": "https://starwars.fandom.com/wiki/Dagobah",
+            "replacement": "Murk Swamp"
+        },
+        {
+            "term": "Alderaan",
+            "url": "https://starwars.fandom.com/wiki/Alderaan",
+            "replacement": "Prime Nexus"
+        },
+        {
+            "term": "Naboo",
+            "url": "https://starwars.fandom.com/wiki/Naboo",
+            "replacement": "Aqua Prime"
+        },
+        {
+            "term": "Coruscant",
+            "url": "https://starwars.fandom.com/wiki/Coruscant",
+            "replacement": "Metro Spire"
+        },
+        {
+            "term": "Mustafar",
+            "url": "https://starwars.fandom.com/wiki/Mustafar",
+            "replacement": "Magma Forge"
+        },
+        {
+            "term": "Kamino",
+            "url": "https://starwars.fandom.com/wiki/Kamino",
+            "replacement": "Oceanus Prime"
+        },
+        {
+            "term": "Cloud City",
+            "url": "https://starwars.fandom.com/wiki/Cloud_City",
+            "replacement": "Aero Spire"
+        },
+        {
+            "term": "Jabba the Hutt",
+            "url": "https://starwars.fandom.com/wiki/Jabba_Desilijic_Tiure",
+            "replacement": "Gorath the Glutton"
+        },
+        {
+            "term": "Boba Fett",
+            "url": "https://starwars.fandom.com/wiki/Boba_Fett",
+            "replacement": "Kael Vex"
+        },
+        {
+            "term": "Jango Fett",
+            "url": "https://starwars.fandom.com/wiki/Jango_Fett",
+            "replacement": "Vex Primus"
+        },
+        {
+            "term": "Stormtrooper",
+            "url": "https://starwars.fandom.com/wiki/Stormtrooper",
+            "replacement": "Void Legionnaire"
+        },
+        {
+            "term": "Clone Trooper",
+            "url": "https://starwars.fandom.com/wiki/Clone_trooper",
+            "replacement": "Replica Unit"
+        },
+        {
+            "term": "Mandalorian",
+            "url": "https://starwars.fandom.com/wiki/Mandalorian",
+            "replacement": "Iron Clan"
+        }
+    ]
+}
