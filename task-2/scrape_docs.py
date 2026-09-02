@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from datetime import datetime
 
 class DocumentScraper:
-    def __init__(self, output_dir="./knowledge_base", terms_file="./terms_map.json", urls_file="./urls.json"):
+    def __init__(self, output_dir="../knowledge_base", terms_file="./terms_map.json", urls_file="./urls.json"):
         self.output_dir = output_dir
         os.makedirs(output_dir, exist_ok=True)
         self.replacement_dict = self.load_json(terms_file) or {}
