@@ -1,0 +1,10 @@
+{
+  "model": "all-MiniLM-L6-v2",
+  "dimension": 384,
+  "chunk_size": 300,
+  "chunk_overlap": 50,
+  "device": "cpu",
+  "documents": 43,
+  "chunks": 36407,
+  "timestamp": "2026-09-02 20:04:58"
+}
