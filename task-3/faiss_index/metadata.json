@@ -1,10 +1,13 @@
 {
   "model": "all-MiniLM-L6-v2",
   "dimension": 384,
-  "chunk_size": 300,
-  "chunk_overlap": 50,
+  "chunk_size_tokens": 300,
+  "chunk_overlap_tokens": 50,
   "device": "cpu",
-  "documents": 43,
-  "chunks": 36407,
-  "timestamp": "2026-09-02 20:04:58"
+  "documents": 45,
+  "chunks": 18416,
+  "total_tokens": 2612258,
+  "avg_tokens_per_chunk": 141,
+  "timestamp": "2026-09-07 01:30:50",
+  "knowledge_base_path": "C:\\Users\\KiRiLL\\Desktop\\Яндекс практикум\\architecture-pro-quantumforge\\knowledge_base"
 }
