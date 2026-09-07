@@ -75,6 +75,7 @@ class VectorIndexBuilder:
         files = list(self.knowledge_dir.glob("*.txt"))
         print(f"   Найдено {len(files)} .txt файлов")
         
+        
         for fp in files:
             with open(fp, 'r', encoding='utf-8') as f:
                 content = f.read()
