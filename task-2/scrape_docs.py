@@ -31,7 +31,14 @@ class DocumentScraper:
         return text
     
     def clean_text(self, text):
-        return re.sub(r'\s+', ' ', text).strip()
+        # Удаляем навигационные элементы
+        text = re.sub(r'in: Canon articles , Mobile space stations .*?Sign In to Save', '', text)
+        text = re.sub(r'Edit Edit source History Purge Talk \(0\)', '', text)
+        # Удаляем ссылки
+        text = re.sub(r'\[[0-9]+\]', '', text)
+        # Удаляем лишние пробелы
+        text = re.sub(r'\s+', ' ', text)
+        return text.strip()
     
     def fetch_page(self, url):
         try:
