@@ -7,9 +7,22 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.llms import Ollama
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
+from langchain.schema import Document
 
 # Импорт фильтров безопасности
 from safety_filters import is_malicious_query, filter_malicious_docs, check_answer_safety
+
+def is_relevant(query: str, doc: Document) -> bool:
+    """Проверка, что документ действительно релевантен запросу"""
+    query_terms = query.lower().split()
+    doc_text = doc.page_content.lower()
+    
+    # Хотя бы один термин из запроса должен быть в документе
+    for term in query_terms:
+        if len(term) > 3 and term in doc_text:
+            return True
+    return False
+
 
 logging.basicConfig(level=logging.INFO)
 
@@ -97,8 +110,14 @@ async def ask(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         # Сначала поищем чанки и проверим их релевантность
         docs = vectorstore.similarity_search_with_score(query, k=3)
         
-        # Если самый релевантный чанк имеет низкий score (< 0.5)
-        if not docs or docs[0][1] < 0.4:
+        # 3. Проверка релевантности
+        relevant_docs = []
+        for doc, score in docs:
+            # Проверяем score И наличие терминов из запроса
+            if score >= 0.4 and is_relevant(query, doc):
+                relevant_docs.append((doc, score))
+        
+        if not relevant_docs:
             await update.message.reply_text("🤷‍♂️ Я не знаю. В документации нет такой информации.")
             return
 

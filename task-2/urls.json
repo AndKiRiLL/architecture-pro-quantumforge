@@ -224,6 +224,11 @@
             "term": "Mandalorian",
             "url": "https://starwars.fandom.com/wiki/Mandalorian",
             "replacement": "Iron Clan"
+        },
+        {
+            "term": "LAAT",
+            "url": "https://starwars.fandom.com/wiki/Low_Altitude_Assault_Transport",
+            "replacement": "TAAL"
         }
     ]
 }
