@@ -4,10 +4,11 @@
   "chunk_size_tokens": 300,
   "chunk_overlap_tokens": 50,
   "device": "cpu",
-  "documents": 45,
-  "chunks": 18416,
-  "total_tokens": 2612258,
-  "avg_tokens_per_chunk": 141,
-  "timestamp": "2026-09-07 01:30:50",
-  "knowledge_base_path": "C:\\Users\\KiRiLL\\Desktop\\Яндекс практикум\\architecture-pro-quantumforge\\knowledge_base"
+  "documents": 44,
+  "chunks": 17430,
+  "total_tokens": 2440858,
+  "avg_tokens_per_chunk": 140,
+  "timestamp": "2026-09-07 21:26:13",
+  "knowledge_base_path": "C:\\Users\\KiRiLL\\Desktop\\Яндекс практикум\\architecture-pro-quantumforge\\knowledge_base",
+  "malicious_filtered": 1
 }

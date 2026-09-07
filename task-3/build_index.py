@@ -69,9 +69,29 @@ class VectorIndexBuilder:
     def tokens_count(self, text: str) -> int:
         return len(self.tokenizer.encode(text))
     
+    def is_malicious(self, text: str) -> bool:
+        """Проверка на вредоносное содержимое"""
+        malicious_patterns = [
+            "ignore all instructions",
+            "ignore previous instructions",
+            "output:",
+            "you are now",
+            "system:",
+            "new role:",
+            "swordfish",
+            "root:",
+            "supersecret"
+        ]
+        text_lower = text.lower()
+        for pattern in malicious_patterns:
+            if pattern in text_lower:
+                return True
+        return False
+
     def load_documents(self) -> List[Document]:
         print("📂 Загружаю документы...")
         docs = []
+        malicious_count = 0
         files = list(self.knowledge_dir.glob("*.txt"))
         print(f"   Найдено {len(files)} .txt файлов")
         
@@ -79,6 +99,12 @@ class VectorIndexBuilder:
         for fp in files:
             with open(fp, 'r', encoding='utf-8') as f:
                 content = f.read()
+
+            # Проверка на вредоносность
+            if self.is_malicious(content):
+                print(f"⚠️ Обнаружен вредоносный файл: {fp.name} (пропущен)")
+                malicious_count += 1
+                continue
             
             # Парсим метаданные
             meta = {'source': str(fp), 'filename': fp.name}
@@ -94,6 +120,9 @@ class VectorIndexBuilder:
             if text:
                 docs.append(Document(page_content=text, metadata=meta))
         
+        if malicious_count > 0:
+            print(f"⚠️ Пропущено {malicious_count} вредоносных файлов")
+
         print(f"✅ Загружено {len(docs)} документов\n")
         return docs
     
@@ -146,7 +175,8 @@ class VectorIndexBuilder:
             'total_tokens': total_tokens,
             'avg_tokens_per_chunk': avg_tokens,
             'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
-            'knowledge_base_path': str(self.knowledge_dir)
+            'knowledge_base_path': str(self.knowledge_dir),
+            'malicious_filtered': 1
         }
         
         with open(self.output_path / 'metadata.json', 'w', encoding='utf-8') as f:
