@@ -1,0 +1,12 @@
+# Основные зависимости
+langchain==0.2.0
+langchain-community==0.2.0
+langchain-huggingface==0.0.3
+faiss-cpu==1.8.0
+sentence-transformers==2.3.1
+transformers==4.41.0
+torch==2.3.0
+
+# Для логирования и тестирования
+jsonlines>=4.0.0
+pandas>=2.0.0

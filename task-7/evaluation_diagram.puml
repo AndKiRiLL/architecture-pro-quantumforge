@@ -1,0 +1,50 @@
+@startuml
+!theme plain
+
+actor "Пользователь" as User
+participant "evaluate.py" as Eval
+participant "RAG Bot" as Bot
+participant "FAISS Index" as FAISS
+participant "LLM (Mistral)" as LLM
+database "Логи\n(logs.jsonl)" as Logs
+
+User -> Eval: Запуск тестирования
+activate Eval
+
+Eval -> Eval: Загрузка golden_questions.json
+
+loop Для каждого вопроса
+    Eval -> Bot: ask(question)
+    activate Bot
+    
+    Bot -> FAISS: similarity_search(query, k=3)
+    activate FAISS
+    FAISS --> Bot: [chunks, scores]
+    deactivate FAISS
+    
+    alt scores < 0.4
+        Bot --> Eval: "Я не знаю"
+        Eval -> Logs: log(status='not_found')
+    else scores >= 0.4
+        Bot -> LLM: generate_answer(prompt + chunks)
+        activate LLM
+        LLM --> Bot: answer
+        deactivate LLM
+        
+        alt answer == "Я не знаю"
+            Bot --> Eval: "Я не знаю"
+            Eval -> Logs: log(status='not_found')
+        else
+            Bot --> Eval: answer + sources
+            Eval -> Logs: log(status='success')
+        end
+    end
+    
+    Eval -> Eval: Сравнение с expected
+    Eval -> Eval: is_correct = True/False
+end
+
+Eval --> User: Результаты (success_rate)
+deactivate Eval
+
+@enduml
