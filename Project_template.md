@@ -281,6 +281,13 @@ python update_index.py
 
 ## Отчет по результатам тестирования RAG-бота
 
+Запуск тестирвоания 
+```shell
+cd ..\task-7\
+pip install -r requirements.txt
+python evaluate.py
+```
+
 ### 1. Какие темы плохо покрыты
 
 | Тема | Проблема | Статус покрытия |

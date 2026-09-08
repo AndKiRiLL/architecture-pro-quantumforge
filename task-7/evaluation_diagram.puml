@@ -22,10 +22,10 @@ loop Для каждого вопроса
     FAISS --> Bot: [chunks, scores]
     deactivate FAISS
     
-    alt scores < 0.4
+    alt scores < 0.5
         Bot --> Eval: "Я не знаю"
         Eval -> Logs: log(status='not_found')
-    else scores >= 0.4
+    else scores >= 0.5
         Bot -> LLM: generate_answer(prompt + chunks)
         activate LLM
         LLM --> Bot: answer
