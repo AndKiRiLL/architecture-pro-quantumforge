@@ -1,0 +1,66 @@
+@startuml
+!define RECTANGLE class
+
+skinparam componentStyle rectangle
+skinparam backgroundColor #FEFEFE
+skinparam component {
+    BackgroundColor #E1F5FE
+    BorderColor #0288D1
+}
+skinparam database {
+    BackgroundColor #FFF9C4
+    BorderColor #F57F17
+}
+skinparam arrow {
+    Color #333333
+    Thickness 2
+}
+
+package "Источники данных" {
+    [Knowledge Base\n../knowledge_base] as KB
+    [Новые файлы\n(вручную / API)] as NEW
+}
+
+package "Планировщик" {
+    [Windows Task Scheduler\n/cron] as SCHED
+}
+
+package "Скрипт обновления" {
+    [update_index.py] as SCRIPT
+    [Обнаружение новых\nфайлов] as DETECT
+    [Создание чанков\n(RecursiveSplitter)] as CHUNK
+    [Генерация эмбеддингов\n(all-MiniLM-L6-v2)] as EMBED
+    [Обновление индекса\n(FAISS)] as UPDATE
+}
+
+package "Хранилище" {
+    database "FAISS Индекс\n(faiss_index/)" as FAISS_DB
+    database "Логи\nupdate_index.log" as LOGS
+    database "Состояние\nindex_state.json" as STATE
+}
+
+NEW --> KB : "Добавление"
+SCHED --> SCRIPT : "Запуск (ежедневно в 6:00)"
+SCRIPT --> DETECT : "1. Сканирование"
+DETECT --> KB : "Чтение"
+DETECT --> STATE : "Сравнение хешей"
+
+SCRIPT --> CHUNK : "2. Разбивка"
+CHUNK --> EMBED : "3. Эмбеддинги"
+EMBED --> UPDATE : "4. Обновление"
+UPDATE --> FAISS_DB : "Сохранение"
+
+SCRIPT --> LOGS : "Запись логов"
+STATE --> LOGS : "Обновление состояния"
+
+note right of SCHED
+  Запуск каждый день в 6:00
+  При ошибке — повтор через 1 час
+end note
+
+note bottom of UPDATE
+  Добавление новых чанков
+  без перестроения всего индекса
+end note
+
+@enduml

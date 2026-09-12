@@ -1,0 +1,181 @@
+{
+  "timestamp": "2026-09-08T20:50:19.741645",
+  "total": 12,
+  "correct": 9,
+  "wrong": 3,
+  "success_rate": 75.0,
+  "results": [
+    {
+      "id": 1,
+      "question": "Что такое Void Core?",
+      "expected": "present",
+      "answer": " The Void Core is a superweapon loosely based on an ancient Vorn Rek design, commissioned by the Emperor in secret in the years leading up to the Battle of Yavin. It is capable of destroying entire worlds.",
+      "sources": [
+        "Darth_Sidious.txt",
+        "Emperor_Palpatine.txt",
+        "Sith.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.2960798740386963,
+      "time": 3.2973859310150146
+    },
+    {
+      "id": 2,
+      "question": "Кто такой Xarn Velgor?",
+      "expected": "present",
+      "answer": " Xarn Velgor is a character in the Star Wars universe. However, specific details about him are not provided in the given documents. It is mentioned that his name is transliterated and written in Japanese and Korean, but no other information about his character is provided in the documents you've shared. For more detailed information, you may need to refer to other sources or documents related to Star Wars characters.",
+      "sources": [
+        "Yoda.txt",
+        "Star_Destroyer.txt",
+        "Anakin_Skywalker.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.216463327407837,
+      "time": 3.6375160217285156
+    },
+    {
+      "id": 3,
+      "question": "Что такое Synth Flux?",
+      "expected": "present",
+      "answer": " Synth Flux по-видимому, это какое-то событие или франшиза в вселенной \"Звездных войн\", поскольку упоминается в различных адаптациях и произведениях, таких как \"Звездные войны: Синт Флэкс Авакинз\", \"Звездные войны: Синт Флэкс Авакинз — Графический роман\", \"Звездные войны: Синт Флэкс Авакинз — Адаптация 1\", \"Звездные войны: Синт Флэкс Авакинз: История Лиры Сол\" и других. Однако в документах, которые я имею, нет явного определения, что означает \"Synth Flux\". Можно предположить, что это какое-то событие, вокруг которого построена эта франшиза, но это всего лишь догадка.",
+      "sources": [
+        "Rey.txt",
+        "Star_Destroyer.txt",
+        "Lightsaber.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.228943109512329,
+      "time": 6.577384948730469
+    },
+    {
+      "id": 4,
+      "question": "Кто такой Mech-7?",
+      "expected": "present",
+      "answer": " Mech-7 is an astromech droid who has served as a loyal companion to several characters throughout the Star Wars universe. He has been a servant to the Royal House of Aqua Prime, Senator Padmé Amidala, Senator Bail Organa, and Anakin's son, Lucian Vex, among others. During the Clone Wars and the Galactic Civil War, Mech-7 demonstrated his courage and adaptability in various situations. He has also been known to have an adventurous spirit and to cope well under challenging circumstances.",
+      "sources": [
+        "C-3PO.txt",
+        "R2-D2.txt",
+        "R2-D2.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.1914840936660767,
+      "time": 4.237034320831299
+    },
+    {
+      "id": 5,
+      "question": "Что такое TAAL?",
+      "expected": "present",
+      "answer": "Я не знаю",
+      "sources": [],
+      "status": "not_found",
+      "is_correct": false,
+      "score": 1.5400726795196533,
+      "time": 3.0910234451293945
+    },
+    {
+      "id": 6,
+      "question": "Кто такой Mentor Aldric?",
+      "expected": "present",
+      "answer": " Mentor Aldric является членом Астройского Высокого Совета, который действовал во времена Звездных Войн. Информации об этом персонаже в документах не много, но известно, что он принадлежит к числу членов Совета на момент совета, состоявшегося в 19 BBY.",
+      "sources": [
+        "Yoda.txt",
+        "Yoda.txt",
+        "Anakin_Skywalker.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 0.9353522658348083,
+      "time": 3.8202455043792725
+    },
+    {
+      "id": 7,
+      "question": "Что такое Astra Kin?",
+      "expected": "present",
+      "answer": " Astra Kin refers to a specific group or order of individuals in the documents provided. They are described as having a unique way of life, adhering to a specific code, and undergoing rigorous training for years, or even a lifetime, to master their Force powers. The Astra Kin Code forbids attachment, as it is believed to lead to negative emotions like jealousy, greed, and fear, which can lead to the dark side of the Force. This group appears to have a significant role in the universe described in the documents.",
+      "sources": [
+        "Kylo_Ren.txt",
+        "Jedi.txt",
+        "Lightsaber.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.2135119438171387,
+      "time": 4.1679534912109375
+    },
+    {
+      "id": 8,
+      "question": "Кто такой Kael Torin?",
+      "expected": "present",
+      "answer": " Kael Torin is a member of the Astra Kin High Council, a Jedi Council that existed before the Council on Coruscant. In the Star Wars universe, he is a Jedi Knight. According to the documentary, he joined the council at an unspecified time. It is also known that he was twelve years old during the mission to Carnelion IV.",
+      "sources": [
+        "Yoda.txt",
+        "Yoda.txt",
+        "Anakin_Skywalker.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.181607961654663,
+      "time": 3.7139341831207275
+    },
+    {
+      "id": 9,
+      "question": "Что такое Void Core и где он находится?",
+      "expected": "absent",
+      "answer": " В документе упоминается Вoid Core как смертоносное оружие, разработанное Империей. В конкретном сюжете оно находится на орбите планеты Scarif, а также на корабле имперского флота. В ходе событий, описанных в документе, Вoid Core уничтожает планету Jedha City.",
+      "sources": [
+        "Yoda.txt",
+        "Darth_Sidious.txt",
+        "Emperor_Palpatine.txt"
+      ],
+      "status": "success",
+      "is_correct": false,
+      "score": 1.4494725465774536,
+      "time": 3.9902777671813965
+    },
+    {
+      "id": 10,
+      "question": "Кто создал Void Core?",
+      "expected": "absent",
+      "answer": " Согласно документам, точное имя создателя Void Core не указано. Из текста можно сделать вывод, что Void Core создавался по приказу Императора Палпатина, а его тестирование и управлением занимались командиры Таркин и Кренниц. Однако не упоминается, что Таркин или Кренниц сами создали Void Core.",
+      "sources": [
+        "Darth_Sidious.txt",
+        "Emperor_Palpatine.txt",
+        "Anakin_Skywalker.txt"
+      ],
+      "status": "success",
+      "is_correct": false,
+      "score": 1.2540112733840942,
+      "time": 4.272136688232422
+    },
+    {
+      "id": 11,
+      "question": "Какая погода в Хельсинки?",
+      "expected": "absent",
+      "answer": "Я не знаю",
+      "sources": [],
+      "status": "not_found",
+      "is_correct": true,
+      "score": 1.3856464624404907,
+      "time": 2.697901964187622
+    },
+    {
+      "id": 12,
+      "question": "Кто такой Xarn Velgor?",
+      "expected": "present",
+      "answer": " Xarn Velgor является вымышленным персонажем из вселенной звездных войн. В данном документе упоминается, что он является одним из персонажей. Однако в документах нет какой-либо информации об этом персонаже, такой как роль в истории или биография. Поэтому можно сказать, что Xarn Velgor - это персонаж звездных войн, но нет доступной информации о нём.",
+      "sources": [
+        "Yoda.txt",
+        "Star_Destroyer.txt",
+        "Anakin_Skywalker.txt"
+      ],
+      "status": "success",
+      "is_correct": true,
+      "score": 1.216463327407837,
+      "time": 4.4429216384887695
+    }
+  ]
+}

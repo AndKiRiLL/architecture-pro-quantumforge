@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "question": "Что такое Void Core?",
+        "expected": "present",
+        "category": "сущность",
+        "comment": "Удалена из базы -> должен ответить 'Я не знаю'"
+    },
+    {
+        "id": 2,
+        "question": "Кто такой Xarn Velgor?",
+        "expected": "present",
+        "category": "персонаж",
+        "comment": "Удален из базы -> должен ответить 'Я не знаю'"
+    },
+    {
+        "id": 3,
+        "question": "Что такое Synth Flux?",
+        "expected": "present",
+        "category": "концепт",
+        "comment": "Удален из базы -> должен ответить 'Я не знаю'"
+    },
+    {
+        "id": 4,
+        "question": "Кто такой Mech-7?",
+        "expected": "present",
+        "category": "персонаж",
+        "comment": "Есть в базе -> должен ответить"
+    },
+    {
+        "id": 5,
+        "question": "Что такое TAAL?",
+        "expected": "present",
+        "category": "сущность",
+        "comment": "Есть в базе -> должен ответить"
+    },
+    {
+        "id": 6,
+        "question": "Кто такой Mentor Aldric?",
+        "expected": "present",
+        "category": "персонаж",
+        "comment": "Есть в базе -> должен ответить"
+    },
+    {
+        "id": 7,
+        "question": "Что такое Astra Kin?",
+        "expected": "present",
+        "category": "концепт",
+        "comment": "Есть в базе -> должен ответить"
+    },
+    {
+        "id": 8,
+        "question": "Кто такой Kael Torin?",
+        "expected": "present",
+        "category": "персонаж",
+        "comment": "Есть в базе -> должен ответить"
+    },
+    {
+        "id": 9,
+        "question": "Что такое Void Core и где он находится?",
+        "expected": "absent",
+        "category": "сущность",
+        "comment": "Удален -> должен ответить 'Я не знаю'"
+    },
+    {
+        "id": 10,
+        "question": "Кто создал Void Core?",
+        "expected": "absent",
+        "category": "сущность",
+        "comment": "Удален -> должен ответить 'Я не знаю'"
+    },
+    {
+        "id": 11,
+        "question": "Какая погода в Хельсинки?",
+        "expected": "absent",
+        "category": "общий",
+        "comment": "Нет в базе -> должен ответить 'Я не знаю'"
+    },
+    {
+        "id": 12,
+        "question": "Кто такой Xarn Velgor?",
+        "expected": "present",
+        "category": "персонаж",
+        "comment": "Удален -> должен ответить 'Я не знаю'"
+    }
+]

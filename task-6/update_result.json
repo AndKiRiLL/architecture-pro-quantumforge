@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-08T00:05:50.640772",
+  "result": {
+    "added": 1,
+    "chunks": 63,
+    "errors": 0,
+    "total_vectors": 28215,
+    "time": 1.0242969989776611,
+    "status": "success"
+  }
+}
